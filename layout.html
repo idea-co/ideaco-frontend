@@ -13,21 +13,47 @@
 </head>
 <body id="layout">
 
-    <header>
-        <!-- Write header here -->
+    <!--header section-->
+    <header class="ideaco_header">
+        <img src="assets/img/primary_logo.png"/>
+        <a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i></a>
+        <div class="ideaco_header__navbar ideaco_header__navbar--mobile">
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Log In</a>
+            <button>Create A Free Account</button>
+        </div>
     </header>
- 
-    <div>
-        <!--main section goes here-->
-    </div>
 
-  	<footer>
-        <!-- write footer here -->
+    <!--footer section-->
+  	<footer class="ideaco_footer">
+        <div class="ideaco_footer__1">
+            <img src="assets/img/secondary_logo.png"/>
+            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <p>&#169; 2020 IDEACO Management System</p>
+        </div>
+        <div class="ideaco_footer__2">
+            <div class="ideaco_footer__2__links">
+                <h5>Links</h5>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="ideaco_footer__2__sociallinks">
+                <img src="assets/img/twitter.png"/>
+                <img src="assets/img/instagram.png"/>
+                <img src="assets/img/facebook.png"/>
+            </div>
+        </div>
+        <p class="ideaco_footer__copyright--mobile">&#169; 2020 IDEACO Management System</p>
 	</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src=""></script>
+<script src="assets/js/nav.js"></script>
 </body>
 </html>
