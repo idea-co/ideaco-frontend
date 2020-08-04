@@ -1,0 +1,45 @@
+//set custom fonts
+@font-face {
+  font-family: 'brown';
+  src: url('../fonts/Brown-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brown';
+  src: url('../fonts/Brown-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'barlow';
+  src: url('../fonts/Barlow-Regular.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//initialise bold font for headings
+h1,h2,h3,h4,h5,h6{
+  font-family: brown;
+}
+
+//set default font 
+$default-font: brown-regular;
+*{
+  font-family: $default-font;
+}
+p{
+  font-family: barlow;
+}
+
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+//theme colors
+$primary-color: #000000;
+$theme-color: #464646;
+$secondary-color: #6626EE;
