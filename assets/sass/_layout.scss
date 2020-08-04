@@ -1,0 +1,172 @@
+#layout{
+    .ideaco_header{
+        background: $bg-color;
+        width: 100%;
+        padding: 30px 50px;
+        img{
+            float: left;
+        }
+        &__navbar{
+            float: right;
+            width: 650px;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            a{
+                font-size: 22px;
+                color: $secondary-color;
+                cursor: pointer;
+            }
+            button{
+                color: $secondary-color;
+                cursor: pointer;
+                outline: none;
+                border: 2px solid $secondary-color;
+                font-size: 18px;
+                letter-spacing: 0.03em;
+                width: 250px;
+                height: 45px;
+                border-radius: 10px;
+                background: $bg-color;
+            }
+        }
+        &__menu{
+            float: right;
+            display: none;
+            font-size: 35px;
+            color: $secondary-color;
+            cursor: pointer;
+            margin-top: -7px;
+        }
+    }
+    .ideaco_footer{
+        background: $secondary-color;
+        padding: 30px 50px;
+        &__1{
+            width: 55%;
+            float: left;
+            padding-right: 15%;
+            p{
+                margin-top: 15px;
+                color: $bg-color;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+            }
+        }
+        &__2{
+            width: 25%;
+            float: right;
+            justify-content: space-between;
+            display: flex;
+            &__links{
+                display: grid;
+                h5{
+                    color: $bg-color;
+                    font-size: 25px;
+                }
+                a{
+                    margin: 10px 0px;
+                    color: #ddd;
+                    font-size: 22px;
+                }
+            }
+            &__sociallinks{
+                display: grid;
+                img{
+                    margin: 12px 0px;
+                    cursor: pointer;
+                    transition: 0.5 ease;
+                    &:hover{
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+        &__copyright--mobile{
+            display: none;
+            margin-top: 15px;
+            color: $bg-color;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width:1000px){
+    #layout{
+        .ideaco_header{
+            padding: 30px 20px;
+            &__navbar--mobile{
+                float: none;
+                display: grid;
+                width: 100%;
+                text-align: center;
+                justify-content: initial;
+                overflow: hidden;
+                height: 0px;
+                transition: 0.5s ease;
+                a{
+                    padding: 10px 0px;
+                }
+                button{
+                    margin: 10px auto;
+                }
+                &--active{
+                    height: 277px;
+                }
+            }
+            &__menu{
+                display: block;
+            }
+        }
+        .ideaco_footer{
+            padding: 30px 20px;
+            &__1{
+                width: 50%;
+                padding-right: 4%;
+            }
+            &__2{
+                width: 30%;
+            }
+        }
+    }
+}
+@media (max-width:750px){
+    #layout{
+        .ideaco_footer{
+            text-align: center;
+            display: grid;
+            &__1{
+                width: 100%;
+                text-align: center;
+                P{
+                    display: none;
+                }
+            }
+            &__2{
+                width: 100%;
+                margin-top: 15px;
+                &__links{
+                    display:none
+                }
+                &__sociallinks{
+                    width: 250px;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            &__copyright--mobile{
+                display: block;
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    #layout{
+        .ideaco_header,.ideaco_footer{
+            padding: 30px 10px;
+        }
+    }
+}
