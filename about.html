@@ -9,12 +9,21 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/style.min.css">
-		<link rel="stylesheet" href="assets/css/about.css">
 		<title>IDEACO - About</title>
 	</head>
 	<body id="about">
+
 		<!-- NAV SECTION -->
-		<header>
+		<header class="ideaco_header ideaco_header--modifier ">
+			<img src="assets/img/primary_logo.png"/>
+			<a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i></a>
+			<div class="ideaco_header__navbar ideaco_header__navbar--mobile">
+				<a href="#">About</a>
+				<a href="#">FAQ</a>
+				<a href="#">Contact Us</a>
+				<a href="#">Log In</a>
+				<button>Create A Free Account</button>
+			</div>
 		</header>
 
 		<!-- HERO SECTION -->
@@ -22,13 +31,15 @@
 		</section>
 
 		<!-- OUR MISSION SECTION -->
-		<section class="our-vision-section">
+		<section class="our-mission-section bg-white">
 			<div class="container-fluid">
-				<div class="justify-content-around row text-center">
+				<div class="justify-content-around row text-center color-purple">
 					<div class="col-10">
 						<div class="ml-2 mr-2">
-							<h2 class="title font-weight-bold">OUR MISSION</h2>
-							<p class="title-description">When you visit a website or an app, the app gains access automatically with your approval to read the terms and conditions for you without any crossing any Red lines. Then it notifies you of certain clauses within the document being scanned.</p>
+							<h4 class="title font-weight-bold">OUR MISSION</h4>
+							<p class="title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra est eu elementum augue quam.<br>
+								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra dictum enim nibh suspendisse<br>
+								quis faucibus enim. </p>
 						</div>
 					</div>
 				</div>
@@ -36,13 +47,22 @@
 		</section>
 
 		<!-- OUR VISION SECTION -->
-		<section class="our-vision-section">
+		<section class="our-vision-section bg-purple color-white">
 			<div class="container-fluid">
 				<div class="justify-content-around row text-center">
 					<div class="col-10">
 						<div class="ml-2 mr-2">
-							<h2 class="title font-weight-bold">OUR MISSION</h2>
-							<p class="title-description">When you visit a website or an app, the app gains access automatically with your approval to read the terms and conditions for you without any crossing any Red lines. Then it notifies you of certain clauses within the document being scanned.</p>
+							<h4 class="title font-weight-bold">IDEACO was founded based on these principles:</h4>
+							<p class="title-description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra est eu elementum augue quam.<br>
+								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra dictum enim nibh suspendisse<br>
+								quis faucibus enim. </p>
+							<br>
+							<p>
+								Et facilisis arcu nunc, eu eget sollicitudin risus. Dictum ut pharetra faucibus<br>
+								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra
+							</p>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -52,37 +72,62 @@
 		<!-- TEAM SECTION -->
 		<section class="team-section">
 			<div class="container-fluid">
+        <div class="w">
+          <h4 class="title font-weight-bold text-center mb-4">OUR TEAM</h4>
+        </div>
 				<div class="row text-center">
 					<div class="col-sm-3 profile">
 						<img class="img-fluid" src="assets/img/profile1.png" >
-						<p class="name font-weight-bold">Timmy Thompson</p>
-						<p>Spa</p>
+						<p class="name font-weight-bold mb-1">Samuel Lejourn</p>
+						<p class="job-title mb-0 color-grey">Head of Development</p>
 					</div>
 					<div class="col-sm-3 profile">
 						<img class="img-fluid" src="assets/img/profile2.png" >
-						<p class="name font-weight-bold">Timmy Thompson</p>
-						<p>Body Massage</p>
+						<p class="name font-weight-bold mb-1">Atinu Nuga</p>
+						<p class="job-title mb-0 color-grey">Head of Risk</p>
 					</div>
 					<div class="col-sm-3 profile">
 						<img class="img-fluid" src="assets/img/profile3.png" >
-						<p class="name font-weight-bold">Timmy Thompson</p>
-						<p>Facial treatment</p>
+						<p class="name font-weight-bold mb-1">Nifemi Julia</p>
+						<p class="job-title mb-0 color-grey">Team Lead, Product</p>
 					</div>
 					<div class="col-sm-3 profile">
 						<img class="img-fluid" src="assets/img/profile4.png" >
-						<p class="name font-weight-bold">Timmy Thompson</p>
-						<p>Body Steaming</p>
+						<p class="name font-weight-bold mb-1">Ajibade Azeez</p>
+						<p class="job-title mb-0 color-grey">Team Lead, DevOps</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- FOOTER SECTION -->
-		<footer>
+	  	<footer class="ideaco_footer">
+	        <div class="ideaco_footer__1">
+	            <img src="assets/img/secondary_logo.png"/>
+	            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	            </p>
+	            <p>&#169; 2020 IDEACO Management System</p>
+	        </div>
+	        <div class="ideaco_footer__2">
+	            <div class="ideaco_footer__2__links">
+	                <h5>Links</h5>
+	                <a href="#">About</a>
+	                <a href="#">FAQ</a>
+	                <a href="#">Contact Us</a>
+	            </div>
+	            <div class="ideaco_footer__2__sociallinks">
+	                <img src="assets/img/twitter.png"/>
+	                <img src="assets/img/instagram.png"/>
+	                <img src="assets/img/facebook.png"/>
+	            </div>
+	        </div>
+	        <p class="ideaco_footer__copyright--mobile">&#169; 2020 IDEACO Management System</p>
 		</footer>
+
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-		<script src=""></script>
+		<script src="assets/js/nav.js"></script>
 	</body>
 </html>
