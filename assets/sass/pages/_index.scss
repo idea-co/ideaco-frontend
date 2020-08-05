@@ -1,4 +1,4 @@
-#home{
+#home {
     .block{
         display: grid;
         &__section1{
@@ -31,6 +31,7 @@
                     border: none;
                     outline: none;
                     border-radius: 10px;
+                    line-height: 40px;
                 }
             }
             &__cont2{
@@ -44,21 +45,20 @@
             background-color: $secondary-color;
             padding: 30px 0px;
             &__cont1{
-                width: 700px;
+                width: 800px;
                 margin: auto;
                 display: flex;
                 align-items: center;
                 div{
-                    h5{
-                        font-size: 30px;
+                    h2{
                         color: $bg-color;
-                        width: 500px;
+                        width: 650px;
                     }
                     p{
                         font-weight: 500;
                         font-size: 20px;
                         color: $content-color;
-                        width: 630px;
+                        width: 690px;
                     }
                 }
             }
@@ -101,6 +101,94 @@
                 }
             }
         }
+        &__section4{
+            background-color: $content-color;
+            padding: 70px 10px;
+            text-align: center;
+            h2{
+                color: $secondary-color;
+                font-weight: bold;
+                font-size: 33px;
+                margin-bottom: 40px;
+            }
+            &__cont{
+                width: 1050px;
+                margin: auto;
+                padding: 50px 50px;
+                background-color: $bg-color;
+                border-radius: 10px;
+                &__slider{
+                    display: flex;
+                    .left_arrow,.right_arrow{
+                        width: 10%;
+                        background-image: url('../img/Rectangle62.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        align-items: center;
+                        display: flex;
+                        i{
+                            margin: auto;
+                            font-size: 20px;
+                            background: $bg-color;
+                            color: $secondary-color;
+                            padding: 10px;
+                            border-radius: 50%;
+                            cursor: pointer;
+                        }
+                    }
+                    .right_arrow{
+                        background-image: url('../img/Rectangle65.png');
+                    }
+                    .img_cont{
+                        width: 80%;
+                        display: flex;
+                        &__image{
+                            width: 45%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        &__content{
+                            width: 55%;
+                            text-align: left;
+                            padding: 30px 30px;
+                            p{
+                                font-size: 20px;
+                            }
+                            .testimony{
+                                margin: 20px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__section5{
+            padding: 70px 0px;
+            div{
+                width: 800px;
+                margin: auto;
+                text-align: center;
+                h3{
+                    color: $secondary-color;
+                }
+                p{
+                    font-size: 20px;
+                }
+                button{
+                    width: 245px;
+                    height: 58px;
+                    color: $bg-color;
+                    background-color: $secondary-color;
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                    line-height: 40px;
+                }
+            }
+        }
     }
 }
 @media (max-width:1200px){
@@ -119,6 +207,34 @@
                             margin-bottom: 30px;
                             width: auto;
                             height: 220px;
+                        }
+                    }
+                }
+            }
+            &__section4{
+                padding: 70px 10px;
+                text-align: center;
+                h2{
+                    margin-bottom: 40px;
+                }
+                &__cont{
+                    padding: 50px 20px;
+                    width: 850px;
+                    &__slider{
+                        display: flex;
+                        .left_arrow, .right_arrow{
+                            width: 7%;
+                        }
+                        .img_cont{
+                            width: 86%;
+                            display: flex;
+                            &__image{
+                                width: 45%;
+                            }
+                            &__content{
+                                width: 55%;
+                                padding: 30px 30px;
+                            }
                         }
                     }
                 }
@@ -160,6 +276,16 @@
                     }
                 }
             }
+            &__section2{
+                &__cont1{
+                    width: 98%;
+                    div{
+                        h2,p{
+                            width: auto;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -176,17 +302,32 @@
                     display: none;
                 }
             }
-            &__section2{
-                &__cont1{
-                    width: 98%;
-                    margin: auto;
-                    display: flex;
-                    align-items: center;
-                    div{
-                        h5,p{
-                            width: auto;
+            &__section4{
+                &__cont{
+                    padding: 30px;
+                    width: 500px;
+                    &__slider{
+                        display: flex;
+                        .left_arrow, .right_arrow{
+                            width: 10%;
+                        }
+                        .img_cont{
+                            width: 80%;
+                            display: grid;
+                            &__image{
+                                width: 100%;
+                            }
+                            &__content{
+                                width: 100%;
+                            }
                         }
                     }
+                }
+            }
+            &__section5{
+                padding: 50px 0px;
+                div{
+                    width: 90%;
                 }
             }
         }
@@ -197,10 +338,16 @@
         .block{
             &__section1{
                 height: 650px;
-                margin-top: 40px;
+                margin-top: 20px;
                 padding: 30px 10px 0px 10px;
                 &__cont1{
                     width: 100%;
+                    h1{
+                        font-size: 45px;
+                    }
+                    p{
+                        margin-top: 30px;
+                    }
                 }
                 &__cont2{
                     display: none;
@@ -219,21 +366,63 @@
                 }
             }
             &__section3{
-                padding: 40px 10px;
+                padding: 20px 0px;
+                P{
+                    width: 90%;
+                    margin: auto;
+                }
+                h2{
+                    width: 95%;
+                    margin: auto;
+                }
                 &__cont{
-                    width: 100%;
+                    width: 95%;
                     &__box{
-                        width: 95%;
+                        width: 100%;
                         height: auto;
-                        margin: 20px auto;
+                        margin: 10px auto;
                         padding: 20px 10px;
                         img{
                             margin: auto;
                             margin-bottom: 20px;
                             height: auto;
-                            width: 90%;
+                            width: 80%;
+                        }
+                        div{
+                            text-align: center;
                         }
                     }
+                }
+            }
+            &__section4{
+                padding: 50px 0px;
+                &__cont{
+                    padding: 10px 5px;
+                    width: 95%;
+                    margin: auto;
+                    h2{
+                        margin-bottom: 20px;
+                    }
+                    &__slider{
+                        display: flex;
+                        .left_arrow, .right_arrow{
+                            width: 10%;
+                            i{
+                                color: $bg-color;
+                                background: transparent;
+                            }
+                        }
+                        .img_cont{
+                            &__content{
+                                padding: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__section5{
+                div{
+                    width: 95%;
                 }
             }
         }
