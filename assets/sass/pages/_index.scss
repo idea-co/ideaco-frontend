@@ -50,8 +50,7 @@
                 display: flex;
                 align-items: center;
                 div{
-                    h5{
-                        font-size: 30px;
+                    h2{
                         color: $bg-color;
                         width: 650px;
                     }
@@ -281,7 +280,7 @@
                 &__cont1{
                     width: 98%;
                     div{
-                        h5,p{
+                        h2,p{
                             width: auto;
                         }
                     }
