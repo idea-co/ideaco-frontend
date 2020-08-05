@@ -2,6 +2,9 @@
     background: $bg-color;
     width: 100%;
     padding: 30px 50px;
+    &--modifier{
+        background: $content-color;
+    }
     img{
         float: left;
     }
@@ -15,6 +18,11 @@
             font-size: 22px;
             color: $secondary-color;
             cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                padding-bottom: 2px;
+                border-bottom: 3px solid $secondary-color;
+            }
         }
         button{
             color: $secondary-color;
@@ -26,14 +34,19 @@
             width: 250px;
             height: 45px;
             border-radius: 10px;
-            background: $bg-color;
+            background: transparent;
+            &:hover{
+                color: $bg-color;
+                background: $secondary-color;
+                border: none;
+            }
         }
     }
     &__menu{
         float: right;
         display: none;
         font-size: 35px;
-        color: $secondary-color;
+        color: $secondary-color !important;
         cursor: pointer;
         margin-top: -7px;
     }
@@ -47,7 +60,7 @@
         padding-right: 15%;
         p{
             margin-top: 15px;
-            color: $bg-color;
+            color: $content-color;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
@@ -66,7 +79,7 @@
             }
             a{
                 margin: 10px 0px;
-                color: #ddd;
+                color: $content-color;
                 font-size: 22px;
             }
         }
@@ -106,6 +119,8 @@
             transition: 0.5s ease;
             a{
                 padding: 10px 0px;
+                width: 120px;
+                margin: auto;
             }
             button{
                 margin: 10px auto;
