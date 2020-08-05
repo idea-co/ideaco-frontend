@@ -1,3 +1,241 @@
 #home{
-    /*Your code goes here*/
+    .block{
+        display: grid;
+        &__section1{
+            padding: 30px 50px 0px 50px;
+            margin-top: 70px;
+            background-image: url('../img/Rectangle59.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 750px;
+            &__cont1{
+                float: left;
+                width: 50%;
+                h1{
+                    color:$secondary-color;
+                    font-size: 60px;
+                    line-height: 59px;
+                }
+                p{
+                    margin-top: 20px;
+                    color: $theme-color;
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                button{
+                    width: 245px;
+                    height: 58px;
+                    color: $bg-color;
+                    background-color: $secondary-color;
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    border-radius: 10px;
+                }
+            }
+            &__cont2{
+                float: right;
+                width: 45%;
+                padding-left: 20px;
+                padding-top: 30px;
+            }
+        }
+        &__section2{
+            background-color: $secondary-color;
+            padding: 30px 0px;
+            &__cont1{
+                width: 700px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                div{
+                    h5{
+                        font-size: 30px;
+                        color: $bg-color;
+                        width: 500px;
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: $content-color;
+                        width: 630px;
+                    }
+                }
+            }
+        }
+        &__section3{
+            background: #FBFBFB;
+            text-align: center;
+            padding: 70px 10px;
+            h2{
+                font-size: 33px;
+                color: $secondary-color;
+            }
+            p{
+                font-weight: 500;
+                font-size: 20px;
+                color: $theme-color;
+                margin-bottom: 30px;
+            }
+            &__cont{
+                width: 1100px;
+                margin: auto;
+                &__box{
+                    width: 500px;
+                    height: 500px;
+                    margin: 25px;
+                    float: left;
+                    background: $bg-color;
+                    box-shadow: 0px 5px 20px rgba(102, 38, 238, 0.15);
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 30px;
+                    img{
+                        margin: auto;
+                        margin-bottom: 30px;
+                        height: 250px;
+                    }
+                    div{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px){
+    #home{
+        .block{
+            &__section3{
+                &__cont{
+                    width: 900px;
+                    &__box{
+                        width: 400px;
+                        height: 500px;
+                        margin: 25px;
+                        padding: 20px;
+                        img{
+                            margin: auto;
+                            margin-bottom: 30px;
+                            width: auto;
+                            height: 220px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    #home{
+        .block{
+            &__section1{
+                height: 650px;
+                padding: 30px 20px 0px 20px;
+                &__cont1,&__cont2{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    #home{
+        .block{
+            &__section3{
+                &__cont{
+                    width: 100%;
+                    &__box{
+                        width: 500px;
+                        height: 500px;
+                        margin: 25px auto;
+                        padding: 20px;
+                        float: none;
+                        img{
+                            margin: auto;
+                            margin-bottom: 30px;
+                            height: 250px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:850px){
+    #home{
+        .block{
+            &__section1{
+                height: 650px;
+                padding: 30px 20px 0px 20px;
+                &__cont1{
+                    width: 100%;
+                }
+                &__cont2{
+                    display: none;
+                }
+            }
+            &__section2{
+                &__cont1{
+                    width: 98%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    div{
+                        h5,p{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px){
+    #home{
+        .block{
+            &__section1{
+                height: 650px;
+                margin-top: 40px;
+                padding: 30px 10px 0px 10px;
+                &__cont1{
+                    width: 100%;
+                }
+                &__cont2{
+                    display: none;
+                }
+            }
+            &__section2{
+                padding: 20px 10px;
+                &__cont1{
+                    width: 100%;
+                    padding: 0px;
+                    display: grid;
+                    img{
+                        margin: auto;
+                    }
+                    text-align: center;
+                }
+            }
+            &__section3{
+                padding: 40px 10px;
+                &__cont{
+                    width: 100%;
+                    &__box{
+                        width: 95%;
+                        height: auto;
+                        margin: 20px auto;
+                        padding: 20px 10px;
+                        img{
+                            margin: auto;
+                            margin-bottom: 20px;
+                            height: auto;
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
