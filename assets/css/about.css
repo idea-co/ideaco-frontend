@@ -1,19 +1,48 @@
 
-.color1 {
+/* GENERAL STYLING */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  font-family: Barlow;
+}
+.color-white {
 	color: #fff;
 }
-.color2 {
+.color-black {
 	color: #000;
 }
-.color3 {
+.color-purple {
 	color: #6626EE;
 }
-.bg-color1 {
+.color-grey {
+	color: #9A9696;
+}
+.bg-white {
 	color: #fff;
 }
-.bg-color2 {
+.bg-black {
 	color: #000;
 }
-.bg-color3 {
+.bg-purple {
 	color: #6626EE;
+}
+.bg-grey {
+	color: #9A9696;
+}
+
+/* OUR MISSION */
+.our-mission-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+/* OUR VISSION */
+.our-vision-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+/* TEAM SECTION */
+.our-mission-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 }
