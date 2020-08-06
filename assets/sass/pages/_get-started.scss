@@ -36,6 +36,9 @@
     .color-grey {
         color: #515151;
     }
+    .color-light-grey {
+        color: #FAFAFA;
+    }
     .bg-white {
         background-color: #fff;
     }
@@ -54,26 +57,25 @@
 
     /* GET STARTED SECTION */
     .header-section .hero-bg {    
-        background-image: url('../img/Group300.png');
+        background-image: url('../img/shade.png');
         background-repeat: no-repeat;
-        padding-top: 60px;
-        opacity: 0.5;
+        padding-top: 15%;
+        // opacity: 0.5;
     }
     .header-section .shade {    
-        background-image: url('../img/shade.png');
-            background-repeat: no-repeat;
-            min-height: inherit;
     }
-    .get-started-section .hero-bg .getstartedbox{
-        padding-bottom: 5rem;
-        padding-top: 5rem;
+    .get-started-section .getstartedbox{
+        margin: auto;
+        background: #FAFAFA;
     }
-
-
-    /* OUR VISSION */
-    .our-vision-section {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+    .getstartedbox{
+    }
+    // .get-started-section .create{
+    // }
+    // .get-started-section .join{
+    // }
+    .get-started-section .minibox{
+        padding: 4rem 2rem;
     }
     .get-started {
         color: #fff;
@@ -82,7 +84,7 @@
         border: none;
         font-size: 18px;
         letter-spacing: 0.03em;
-        width: 180px;
+        width: 147px;
         height: 45px;
         border-radius: 10px;
         background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
@@ -95,38 +97,30 @@
         background: #6626EE;
         /* border: none; */
     }
-    .our-vision-section .title-description {
-        font-weight: 500;
-    }
-
-
-    /* TEAM SECTION */
-    .team-section {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
-    }
-    .team-section .profile{
-        padding-bottom: 2rem;
-    }
-    .team-section .profile .name{
-        text-transform: uppercase;
-        padding-top: 1rem;;
-        padding-bottom: 0rem;
+    .get-started-section .create .get-started {
+        color: #6626EE;
+        cursor: pointer;
+        outline: none;
+        border: none;
         font-size: 18px;
+        letter-spacing: 0.03em;
+        width: 147px;
+        height: 45px;
+        border-radius: 10px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DDDDDD));
+        background: linear-gradient(180deg, #FFFFFF 0%, #DDDDDD 100%);
+        -webkit-box-shadow: 0px 5px 15px 3px rgba(218, 201, 255, 0.2);
+        box-shadow: 0px 5px 15px 3px rgba(221, 210, 246, 0.2);
     }
-    .team-section .profile .job-title{
-        font-size: 13px;
-        font-weight: 500;
+    .get-started-section .create .get-started:hover {
+        color: #6626EE;
+        background: #DDDDDD;
+        /* border: none; */
+    } 
+    /* On screens that are 770px wide or less*/
+    @media screen and (max-width: 770px) {
     }
-    @media (max-width: 550px) {
-        .ideaco_header, .ideaco_footer {
-            padding: 30px 30px 25px 30px;
-        }
-    }
-    .ideaco_header--modifier {
-        background: #F6F5F6;
-    }
-    .text-space {
-        letter-spacing: .3px;
+    /* On screens that are 415px wide or less*/
+    @media screen and (max-width: 415px) {
     }
 }
