@@ -125,6 +125,9 @@
                         input{
                             height: 60px;
                             font-size: 18px;
+                            &::placeholder{
+                                font-size: 18px;
+                            }
                         }
                         label{
                             font-size: 18px;
