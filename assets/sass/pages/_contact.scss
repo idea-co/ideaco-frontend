@@ -40,9 +40,9 @@
                         border-radius: 10px;
                         font-size: 21px;
                         outline: none;
+                        font-family: Roboto;
                         &::placeholder{
                             font-size: 21px;
-                            font-family: Roboto;
                         }
                         &:focus{
                             border: 1px solid $secondary-color;
@@ -68,9 +68,9 @@
                         font-size: 21px;
                         padding: 10px;
                         outline: none;
+                        font-family: Roboto;
                         &::placeholder{
                             font-size: 21px;
-                            font-family: Roboto;
                         }
                         &:focus{
                             border: 1px solid $secondary-color;
