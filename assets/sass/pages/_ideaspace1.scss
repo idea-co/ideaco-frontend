@@ -1,4 +1,4 @@
-#ideaspace1{
+#ideaspace1,#ideaspace2{
     .block{
         width: 1000px;
         background-image: url('../img/shade.png');
@@ -13,6 +13,9 @@
             h2{
                 font-size: 40px;
                 font-weight: bold;
+                width: 90%;
+                margin: auto;
+                margin-bottom: 20px;
             }
             p{
                 font-size: 22px;
@@ -86,14 +89,14 @@
     }
 }
 @media (max-width:1200px){
-    #ideaspace1{
+    #ideaspace1,#ideaspace2{
         .block{
             width: 800px;
         }
     }
 }
 @media (max-width:850px){
-    #ideaspace1{
+    #ideaspace1,#ideaspace2{
         .block{
             width: 100%;
             .content_section{
@@ -105,7 +108,7 @@
     }
 }
 @media (max-width:550px){
-    #ideaspace1{
+    #ideaspace1,#ideaspace2{
         .block{
             a{
                 img{
