@@ -1,4 +1,4 @@
-#home {
+#home {  
     .block{
         display: grid;
         &__section1{
@@ -337,7 +337,7 @@
     #home{
         .block{
             &__section1{
-                height: 650px;
+                height: 620px;
                 margin-top: 20px;
                 padding: 30px 10px 0px 10px;
                 &__cont1{
@@ -347,6 +347,7 @@
                     }
                     p{
                         margin-top: 30px;
+                        font-size: 20px;
                     }
                 }
                 &__cont2{

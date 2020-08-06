@@ -16,29 +16,39 @@
         align-items: center;
         a{
             font-size: 22px;
-            color: $secondary-color;
+            color: #8D8D8D;
             cursor: pointer;
             text-decoration: none;
             &:hover{
-                padding-bottom: 2px;
                 border-bottom: 3px solid $secondary-color;
+                color: $secondary-color;
             }
         }
-        button{
+        .active{
             color: $secondary-color;
+            &:hover{
+                border: none;
+            }
+        }
+        .login{
+            color: $secondary-color;
+            font-size: 20px;
+            margin-right: -30px;
+        }
+        button{
+            color: $bg-color;
             cursor: pointer;
             outline: none;
-            border: 2px solid $secondary-color;
+            border: none;
             font-size: 18px;
             letter-spacing: 0.03em;
-            width: 250px;
+            width: 180px;
             height: 45px;
             border-radius: 10px;
-            background: transparent;
+            background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+            box-shadow: 0px 5px 15px 3px rgba(102, 38, 238, 0.2);
             &:hover{
-                color: $bg-color;
                 background: $secondary-color;
-                border: none;
             }
         }
     }
@@ -126,6 +136,9 @@
             }
             &--active{
                 height: 277px;
+            }
+            .login{
+                margin: auto;
             }
         }
         &__menu{
