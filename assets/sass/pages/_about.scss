@@ -14,7 +14,7 @@
         color: #6626EE;
     }
     .color-grey {
-        color: #9A9696;
+        color: #515151;
     }
     .bg-white {
         background-color: #fff;
@@ -28,14 +28,32 @@
     .bg-grey {
         background-color: #9A9696;
     }
+    .bg-light-grey {
+        background-color: #FAFAFA   ;
+    }
+    button {
+        width: 245px;
+        height: 58px;
+        color: #fff;
+        background-color: #6626EE;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        line-height: 40px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
+        background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+        -webkit-box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+        box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+    }
 
     /* OUR MISSION */
     .our-mission-section {
-        padding-bottom: 3rem;
-        padding-top: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
     }
     .our-mission-section .title-description {
-    font-weight: 600;
+        font-weight: 600;
     }
 
     /* OUR VISSION */
@@ -53,10 +71,13 @@
         padding-bottom: 2rem;
     }
     .team-section .profile .name{
+        text-transform: uppercase;
+        padding-top: 1rem;;
         padding-bottom: 0rem;
+        font-size: 18px;
     }
     .team-section .profile .job-title{
-        font-size: 10px;
+        font-size: 13px;
         font-weight: 600;
     }
     @media (max-width: 550px) {
@@ -66,5 +87,24 @@
     }
     .ideaco_header--modifier {
         background: #fff;
+    }
+    .text-space {
+        letter-spacing: .3px;
+    }
+    .button {
+        width: 245px;
+        height: 58px;
+        color: #fff;
+        background-color: #6626EE;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        line-height: 40px;
+    }
+    button:hover {
+        color: #fff;
+        background: #6626EE;
+        /* border: none; */
     }
 }
