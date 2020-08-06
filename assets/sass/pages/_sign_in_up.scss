@@ -1,6 +1,147 @@
 #sign_up{
-    /*Your code goes here*/
+    /* GENERAL STYLING */
+     html {
+         font-family: Barlow;
+    }
+    /* SCROLL BAR */
+    /* width */
+     ::-webkit-scrollbar {
+         width: 10px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+         background: #f1f1f1;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+         background: #888;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+         background: #555;
+    }
+     .color-white {
+         color: #fff;
+    }
+     .color-black {
+         color: #000;
+    }
+     .color-purple {
+         color: #6626EE;
+    }
+     .color-grey {
+         color: #515151;
+    }
+     .color-light-grey {
+         color: #FAFAFA;
+    }
+     .bg-white {
+         background-color: #fff;
+    }
+     .bg-black {
+         background-color: #000;
+    }
+     .bg-purple {
+         background-color: #6626EE;
+    }
+     .bg-grey {
+         background-color: #9A9696;
+    }
+     .bg-light-grey {
+         background-color: #FAFAFA ;
+    }
+    .main-section {
+        margin-top: 6rem;
+        margin-top: 1rem;
+    }
+    .main-section .signupwithgoogle{
+        background: #FFFFFF;
+        border: 2px solid #669fff;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: .4rem 3.5rem;
+    }
+    .main-section .signupwithgoogle:hover{
+        -webkit-box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+        box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+
+    }
+    .main-section .signupwithgoogle img{
+        height: 24px;
+    }
+    /* GET STARTED SECTION */
+     .header-section .hero-bg {
+        background-image: url('../img/shade.png');
+        background-repeat: no-repeat;
+    }
+    .header-section .shade {
+       padding-top: 15%;
+    }
+     .get-started {
+         color: #fff;
+         cursor: pointer;
+         outline: none;
+         border: none;
+         font-size: 18px;
+         letter-spacing: 0.03em;
+         width: 147px;
+         height: 45px;
+         border-radius: 10px;
+         background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
+         background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+         -webkit-box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+         box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+    }
+     .get-started:hover {
+         color: #fff;
+         background: #6626EE;
+        /* border: none;
+         */
+    }
+     .main-section .create .get-started {
+         color: #6626EE;
+         cursor: pointer;
+         outline: none;
+         border: none;
+         font-size: 18px;
+         letter-spacing: 0.03em;
+         width: 147px;
+         height: 45px;
+         border-radius: 10px;
+         background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DDDDDD));
+         background: linear-gradient(180deg, #FFFFFF 0%, #DDDDDD 100%);
+         -webkit-box-shadow: 0px 5px 15px 3px rgba(218, 201, 255, 0.2);
+         box-shadow: 0px 5px 15px 3px rgba(221, 210, 246, 0.2);
+    }
+    .main-section .create .get-started:hover {
+        color: #6626EE;
+        background: #DDDDDD;
+       /* border: none;
+        */
+    }
+    .main-section input {
+        border-radius: 10px;
+
+        width: 147px;
+        height: 45px;
+  }
+    /* On screens that are 770px wide or less*/
+     @media screen and (max-width: 770px) {
+
+        .main-section .signupwithgoogle{
+            padding: .4rem .6rem;
+        }
+        .main-section .signupwithgoogle img{
+            padding-right: .4rem;
+        }
+        .header-section .shade {
+            padding-top: 35%;
+        }
+    }
+    /* On screens that are 415px wide or less*/
+     @media screen and (max-width: 415px) {
+    }
 }
-#sign_in{
+ #sign_in{
     /*Your code goes here*/
 }
