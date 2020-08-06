@@ -1,206 +1,132 @@
-#faq{
-    .block{
-        height: auto;
-        margin: 70px auto;
-        &__section1{
-            width: 900px;
-            margin: auto;
-            text-align: center;
-            h2{
-                font-weight: bold;
-                margin-bottom: 20px;
-                font-size: 40px;
-            }
-            p{
-                font-size: 22px;
-                width: 50%;
-                margin: auto;
-            }
-        }
-        &__section2{
-            background-image: url('../img/Group300.png');
+#about{
+
+    /* GENERAL STYLING */
+    html {
+      font-family: Barlow;
+    }
+    /* SCROLL BAR */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+    .color-white {
+        color: #fff;
+    }
+    .color-black {
+        color: #000;
+    }
+    .color-purple {
+        color: #6626EE;
+    }
+    .color-grey {
+        color: #515151;
+    }
+    .bg-white {
+        background-color: #fff;
+    }
+    .bg-black {
+        background-color: #000;
+    }
+    .bg-purple {
+        background-color: #6626EE;
+    }
+    .bg-grey {
+        background-color: #9A9696;
+    }
+    .bg-light-grey {
+        background-color: #FAFAFA   ;
+    }
+
+    /* GET STARTED SECTION */
+    .header-section .hero-bg {    
+        background-image: url('../img/Group300.png');
+        background-repeat: no-repeat;
+        padding-top: 60px;
+        opacity: 0.5;
+    }
+    .header-section .shade {    
+        background-image: url('../img/shade.png');
             background-repeat: no-repeat;
-            width: 1200px;
-            margin: 20px auto;
-            padding-top: 60px;
-            &__cont{
-                padding: 20px 80px 80px 80px;
-                width: 1000px;
-                margin: auto;
-                background: #FAFAFA;
-                box-shadow: 0px 10px 30px rgba(25, 1, 77, 0.2);
-                border-radius: 10px;
-                &__header{
-                    text-align: center;
-                    margin-bottom: 40px;
-                    a{
-                        margin: 0px 20px;
-                        font-weight: bold;
-                        font-size: 22px;
-                        color: $theme-color;
-                    }
-                    .active{
-                        color: $secondary-color;
-                    }
-                }
-                &__question{
-                    padding: 10px 20px;
-                    height: 76px;
-                    overflow: hidden;
-                    background: $bg-color;
-                    border: 1px solid #ACB5BD;
-                    border-radius: 8px;
-                    cursor: pointer;
-                    transition: 1s ease;
-                    margin-bottom: 15px;
-        
-                    &__header{
-                        font-size: 20px;
-                        line-height: 60px;
-                        font-weight: 600;
-                        color: #495057;
-        
-                        &__btn{
-                            float: right;
-                            transition: 1s ease;
-                            color: $secondary-color;
-                        }
-        
-                        &__btn--active{
-                        transform: rotate(-180deg);
-                        }
-                    }
-        
-                    &__answer{
-                        color: #6C6C6C;
-                        font-size: 20px;
-                    }
-                    &--active{
-                        height: auto;
-                    }
-                }
-            }
+            min-height: inherit;
+    }
+    .get-started-section .hero-bg .getstartedbox{
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+
+    /* OUR VISSION */
+    .our-vision-section {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .get-started {
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        letter-spacing: 0.03em;
+        width: 180px;
+        height: 45px;
+        border-radius: 10px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
+        background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+        -webkit-box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+        box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+    }
+    .get-started:hover {
+        color: #fff;
+        background: #6626EE;
+        /* border: none; */
+    }
+    .our-vision-section .title-description {
+        font-weight: 500;
+    }
+
+
+    /* TEAM SECTION */
+    .team-section {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .team-section .profile{
+        padding-bottom: 2rem;
+    }
+    .team-section .profile .name{
+        text-transform: uppercase;
+        padding-top: 1rem;;
+        padding-bottom: 0rem;
+        font-size: 18px;
+    }
+    .team-section .profile .job-title{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    @media (max-width: 550px) {
+        .ideaco_header, .ideaco_footer {
+            padding: 30px 30px 25px 30px;
         }
     }
-}
-@media (max-width:1250px){
-    #faq{
-        .block{
-            &__section1{
-                width: 90%;
-                p{
-                    width: 50%;
-                }
-            }
-            &__section2{
-                width: 900px;
-                &__cont{
-                    padding: 20px 60px 60px 60px;
-                    width: 800px;
-                }
-            }
-        }
+    .ideaco_header--modifier {
+        background: #F6F5F6;
     }
-}
-@media (max-width:1250px){
-    #faq{
-        .block{
-            &__section1{
-                width: 90%;
-                p{
-                    width: 50%;
-                }
-            }
-            &__section2{
-                width: 900px;
-                &__cont{
-                    padding: 20px 60px 60px 60px;
-                    width: 800px;
-                }
-            }
-        }
-    }
-}
-@media (max-width:950px){
-    #faq{
-        .block{
-            &__section1{
-                width: 90%;
-                p{
-                    width: 60%;
-                }
-            }
-            &__section2{
-                width: 90%;
-                &__cont{
-                    padding: 20px 40px 40px 40px;
-                    width: 90%;
-                }
-            }
-        }
-    }
-}
-@media (max-width:750px){
-    #faq{
-        .block{
-            &__section1{
-                width: 95%;
-                p{
-                    width: 70%;
-                }
-            }
-            &__section2{
-                width: 95%;
-                &__cont{
-                    padding: 20px 30px 30px 30px;
-                    width: 95%;
-                }
-            }
-        }
-    }
-}
-@media (max-width:550px){
-    #faq{
-        .block{
-            margin: 40px auto;
-            &__section1{
-                width: 97%;
-                h2{
-                    font-size: 30px;
-                }
-                p{
-                    width: auto;
-                    font-size: 20px;
-                }
-            }
-            &__section2{
-                padding-top: 30px;
-                &__cont{
-                    padding: 10px;
-                    width: 100%;
-                    &__header{
-                        margin-bottom: 20px;
-                        display: grid;
-                        text-align: left;
-                        a{
-                            font-size: 17px;
-                            margin: 2px 0px;
-                        }
-                    }
-                    &__question{
-                        padding: 15px 5px;
-                        margin-bottom: 10px;
-                        height: 60px;
-                        p{
-                            font-size: 17px;
-                            line-height: 30px;
-                        }
-                        &--active{
-                            height: auto;
-                        }
-                    }
-                }
-            }
-        }
+    .text-space {
+        letter-spacing: .3px;
     }
 }
