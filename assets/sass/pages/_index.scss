@@ -175,6 +175,9 @@
         }
         &__section5{
             padding: 70px 0px;
+            .container1{
+                display: none;
+            }
             div{
                 width: 800px;
                 margin: auto;
@@ -200,6 +203,10 @@
                     &:hover{
                         background: $secondary-color;
                     }
+                }
+                img{
+                    width:100%;
+                    margin:20px 0px
                 }
             }
         }
@@ -341,7 +348,7 @@
             &__section5{
                 padding: 50px 0px;
                 div{
-                    width: 90%;
+                    width: 95%;
                 }
             }
         }
@@ -437,7 +444,13 @@
             }
             &__section5{
                 div{
-                    width: 95%;
+                    width: 100%;
+                }
+                .container1{
+                    display: block;
+                }
+                .container2{
+                    display: none;
                 }
             }
         }
