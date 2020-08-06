@@ -52,13 +52,21 @@
         background-color: #FAFAFA   ;
     }
 
-    /* OUR MISSION */
-    .our-mission-section {
+    /* GET STARTED SECTION */
+    .header-section .hero-bg {    
+        background-image: url('../img/Group300.png');
+        background-repeat: no-repeat;
+        padding-top: 60px;
+        opacity: 0.5;
+    }
+    .header-section .shade {    
+        background-image: url('../img/shade.png');
+            background-repeat: no-repeat;
+            min-height: inherit;
+    }
+    .get-started-section .hero-bg .getstartedbox{
         padding-bottom: 5rem;
         padding-top: 5rem;
-    }
-    .our-mission-section .title-description {
-        font-weight: 500;
     }
 
 
