@@ -16,7 +16,7 @@
             }
         }
         &__section2{
-            background-image: url('../img/Group300.png');
+            background-image: url('../img/shade.png');
             background-repeat: no-repeat;
             width: 1200px;
             margin: 20px auto;
@@ -39,9 +39,13 @@
                         border: 1px solid #ACB5BD;
                         border-radius: 10px;
                         font-size: 21px;
+                        outline: none;
                         &::placeholder{
                             font-size: 21px;
                             font-family: Roboto;
+                        }
+                        &:focus{
+                            border: 1px solid $secondary-color;
                         }
                     }
                     label{
@@ -63,9 +67,13 @@
                         border-radius: 10px;
                         font-size: 21px;
                         padding: 10px;
+                        outline: none;
                         &::placeholder{
                             font-size: 21px;
                             font-family: Roboto;
+                        }
+                        &:focus{
+                            border: 1px solid $secondary-color;
                         }
                     }
                 }
@@ -76,6 +84,8 @@
                     background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
                     border-radius: 10px;
                     border: none;
+                    outline: none;
+                    font-size: 22px;
                     &:hover{
                         background: $secondary-color;
                     }
