@@ -24,8 +24,8 @@
                     font-weight: 500;
                 }
                 button{
-                    width: 245px;
-                    height: 50px;
+                    width: 321px;
+                    height: 70px;
                     color: $bg-color;
                     border-radius: 10px;
                     background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
@@ -96,6 +96,11 @@
                     border-radius: 10px;
                     text-align: center;
                     padding: 30px;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.05);
+                        border-bottom: 3px solid $secondary-color;
+                    }
                     img{
                         margin: auto;
                         margin-bottom: 30px;
@@ -186,8 +191,8 @@
                     font-size: 20px;
                 }
                 button{
-                    width: 250px;
-                    height: 55px;
+                    width: 321px;
+                    height: 70px;
                     color: $bg-color;
                     border-radius: 10px;
                     background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
