@@ -38,6 +38,10 @@
                         font-weight: bold;
                         font-size: 22px;
                         color: $theme-color;
+                        cursor: pointer;
+                        &:hover{
+                            color: $secondary-color;
+                        }
                     }
                     .active{
                         color: $secondary-color;
