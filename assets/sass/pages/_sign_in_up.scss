@@ -153,9 +153,9 @@
     }.form-control:focus {
         color: #495057;
         background-color: #fff;
-        border-color: #80bdff;
+        border-color: #6626ee70;
         outline: 0;
-        // box-shadow: 0 0 0 0.2rem rgb(4 22 214 / 47%);
+        box-shadow: 0px 2px #6626ee38;
     }
     .footer-section a {
         text-decoration: none;
@@ -168,6 +168,7 @@
 
         .main-section .signupwithgoogle{
             padding: .4rem .6rem;
+            // font-size: x-small;
         }
         .main-section .signupwithgoogle img{
             padding-right: .4rem;
