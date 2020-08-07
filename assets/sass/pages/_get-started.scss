@@ -73,7 +73,7 @@
     // .get-started-section .join{
     // }
     .get-started-section .minibox{
-        padding: 4rem 2rem;
+        padding: 2rem 1rem;
     }
     .get-started {
         color: #fff;
@@ -91,7 +91,7 @@
         box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
     }
     .get-started:hover {
-        color: #fff;
+        color: #bfbfbf;
         background: #6626EE;
         /* border: none; */
     }
@@ -116,13 +116,6 @@
         /* border: none; */
     } 
     @media (max-width: 1000px) {
-
-        .get-started {
-            width: 151px;
-        }
-        .get-started-section .create .get-started {
-            width: 151px;
-        }
     }
     /* On screens that are 415px wide or less*/
     @media screen and (max-width: 415px) {
