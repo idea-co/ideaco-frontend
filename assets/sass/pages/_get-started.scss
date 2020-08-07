@@ -1,4 +1,4 @@
-#about{
+#get-started{
 
     /* GENERAL STYLING */
     html {
@@ -68,8 +68,6 @@
         margin: auto;
         background: #FAFAFA;
     }
-    .getstartedbox{
-    }
     // .get-started-section .create{
     // }
     // .get-started-section .join{
@@ -84,7 +82,7 @@
         border: none;
         font-size: 18px;
         letter-spacing: 0.03em;
-        width: 130px;
+        width: 180px;
         height: 45px;
         border-radius: 10px;
         background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
@@ -104,7 +102,7 @@
         border: none;
         font-size: 18px;
         letter-spacing: 0.03em;
-        width: 130px;
+        width: 180px;
         height: 45px;
         border-radius: 10px;
         background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DDDDDD));
@@ -117,8 +115,14 @@
         background: #DDDDDD;
         /* border: none; */
     } 
-    /* On screens that are 770px wide or less*/
-    @media screen and (max-width: 770px) {
+    @media (max-width: 1000px) {
+
+        .get-started {
+            width: 151px;
+        }
+        .get-started-section .create .get-started {
+            width: 151px;
+        }
     }
     /* On screens that are 415px wide or less*/
     @media screen and (max-width: 415px) {
