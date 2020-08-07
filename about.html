@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="Description" content="Enter your description here"/>
+		<meta name="Description" content="Your typical Idea Management tool"/>
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
@@ -15,18 +15,20 @@
 	<body id="about">
 
 		<!-- NAV SECTION -->
-		<header class="ideaco_header ideaco_header--modifier">
+		<header class="ideaco_header ideaco_header--mobile ">
 			<a href="index.html"><img src="assets/img/primary_logo.png"/></a>
-			<a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i></a>
-			<div class="ideaco_header__navbar ideaco_header__navbar--mobile">
-				<a href="#">About</a>
+			<a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a>
+
+			<div class="ideaco_header__navbar1">
+				<a class="active">About</a>
 				<a href="faq.html">FAQ</a>
 				<a href="contact.html">Contact Us</a>
-				<a href="sign_in.html" class="login">Log In</a>
-				<button onclick="window.location.href='sign_up.html'">Get Started</button>
+			</div>
+			<div class="ideaco_header__navbar2">
+				<a href="sign-in.html" class="login">Log In</a>
+				<button onclick="window.location.href='get-started.html'">Get Started</button>
 			</div>
 		</header>
-
 		<!-- HERO SECTION -->
 		<section class="hero-section">
 		</section>
@@ -34,13 +36,14 @@
 		<!-- OUR MISSION SECTION -->
 		<section class="our-mission-section bg-white">
 			<div class="container-fluid">
-				<div class="justify-content-around row text-center color-purple">
+				<div class="justify-content-around row text-center color-black">
 					<div class="col-10">
 						<div class="ml-2 mr-2">
-							<h4 class="title font-weight-bold">OUR MISSION</h4>
-							<p class="title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra est eu elementum augue quam.<br>
-								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra dictum enim nibh suspendisse<br>
-								quis faucibus enim. </p>
+							<h4 class="title font-weight-bold">Our Mission</h4>
+							<p class="title-description color-grey">
+								IDEACO is robust and powerful idea management system<br>
+								with phases through share, support, prioritize and implementation of the<br>
+								right ideas for businesses. </p>
 						</div>
 					</div>
 				</div>
@@ -48,22 +51,25 @@
 		</section>
 
 		<!-- OUR VISION SECTION -->
-		<section class="our-vision-section bg-purple color-white">
+		<section class="our-vision-section bg-light-grey color-white">
 			<div class="container-fluid">
 				<div class="justify-content-around row text-center">
 					<div class="col-10">
 						<div class="ml-2 mr-2">
-							<h4 class="title font-weight-bold">IDEACO was founded based on these principles:</h4>
-							<p class="title-description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra est eu elementum augue quam.<br>
-								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra dictum enim nibh suspendisse<br>
-								quis faucibus enim. </p>
+							<h4 class="title font-weight-bold color-black">IDEACO was founded to</h4>
+							<p class="title-description color-grey">
+								IDEACO is robust and powerful idea management system<br>
+								with phases through share, support, prioritize and implementation of the<br>
+								right ideas for businesses. </p>
 							<br>
-							<p>
-								Et facilisis arcu nunc, eu eget sollicitudin risus. Dictum ut pharetra faucibus<br>
-								Sollicitudin cursus nisl pellentesque ac nisl posuere. Elit aliquet pharetra
-							</p>
-						</div>
+							<p class="title-description color-grey">
+								You can now with prioritize, share, support and implement the right ideas </p>
+
+							<div class="pt-3">
+								<a href="get-started.html" class="mt-4">
+									<button class="get-started" onclick="window.location.href='get-started.html'">Get started</button>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -73,8 +79,8 @@
 		<!-- TEAM SECTION -->
 		<section class="team-section">
 			<div class="container-fluid">
-          	<h4 class="title font-weight-bold text-center mb-4">OUR TEAM</h4>
-				<div class="row text-center">
+          	<h4 class="font-weight-bold mb-5 pt-2 text-center title">Meet Our Team</h4>
+				<div class="row text-center ml-lg-5 mr-lg-5 ml-sm-1 mr-sm-1">
 					<div class="col-sm-3 profile">
 						<img class="img-fluid" src="assets/img/profile1.png" >
 						<p class="name font-weight-bold mb-1">Samuel Lejourn</p>
@@ -112,8 +118,8 @@
 	            <div class="ideaco_footer__2__links">
 	                <h5>Links</h5>
 	                <a href="#">About</a>
-	                <a href="#">FAQ</a>
-	                <a href="#">Contact Us</a>
+	                <a href="faq.html">FAQ</a>
+	                <a href="contact.html">Contact Us</a>
 	            </div>
 	            <div class="ideaco_footer__2__sociallinks">
 	                <img src="assets/img/twitter.png"/>

@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/style.min.css">
 		<title>IDEACO - Sign up</title>
 	</head>
-	<body id="sign_up">
+	<body id="join">
 
 		<!-- HERADER SECTION -->
 		<section class="header-section">
@@ -29,15 +29,23 @@
                             <!-- MAIN SECTION -->
                             <section class="main-section">
                                 <div class="row justify-content-center main">
-                                    <div class="col-12 sign-in color-white">
+                                    <div class="col-6 sign-in color-white">
                                         <div class="minibox color-black">
-                                            <h4 class="title font-weight-bold">HNGi7</h4>
-                                            <p class="title-description color-grey mb-4">Found your ideaspace, now let’s Sign you up</p>
+                                            <h4 class="title font-weight-bold">Join Your Ideaspace and Share Those Awesome Ideas</h4>
+                                            <p class="title-description  mb-4">Enter your ideaspaces’s URL</p>
                                             
-                                            <a href="get-started.html">
-                                                <button class="signupwithgoogle mb-3"> <img src="assets/img/google.png" alt="google" class="">  Continue with Google</button>
-                                            </a>
-                                            <p class="title-description color-grey mb-0">Or</p>
+                                            <form id="signup-form" name="signup-form" action="#">
+                                                <div class="mb-0 mt-2">
+                                                    <!-- <label for="name" class="mb-0 mt-1 text-left">Enter your ideaspaces’s URL</label> -->
+                                                    <input type="text" id="name" name="name" class="form-control" autocomplete="off" placeholder="Your Ideaspace URL">
+                                                </div>
+                                                <div class="mb-0 mt-3">
+                                                    <a href="join-email.html">
+                                                        <button class="sign-up-continue">Join</button>
+                                                    </a>                                                
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -45,28 +53,11 @@
                             <section class="main-section bg-white">
                                 <div class="row justify-content-center main">
                                     <div class="sign-in color-white">
-                                        <div class="minibox color-black">
-                                            <form id="signup-form" name="signup-form" action="" class="sign-up text-sm-left text-left">
-                                                <div class="mb-0">
-                                                    <label for="email" class="mb-0 text-left">Enter email address</label>
-                                                    <input type="email" id="email" name="email" class="form-control" autocomplete="off" placeholder="Enter your email address">
-                                                </div>
-                                                <div class="mb-0 mt-2">
-                                                    <label for="name" class="mb-0 mt-1 text-left">Your name</label>
-                                                    <input type="text" id="name" name="name" class="form-control" autocomplete="off" placeholder="Enter your Ideaspace name">
-                                                    <span class="disclaimer">will be displayed to others on the Ideaspace</span>
-                                                </div>
-                                                <div class="mb-0 mt-2">
-                                                    <label for="password" class="mb-0 mt-1 text-left">Create a pasword</label>
-                                                    <input type="password" id="password" name="password" class="form-control" autocomplete="off" placeholder="Create a password">
-                                                </div>
-                                                <div class="mb-0 mt-3">
-                                                    <a href="get-started.html">
-                                                        <button class="sign-up-continue">Join</button>
-                                                    </a>                                                
-                                                </div>
-                                            </form>
-                                            
+                                        <div class="minibox color-grey">    
+                                            <div>
+                                                <p>Not sure of your ideaspace? <a href="">Let’s find it then</a></p>
+                                                <p>Don’t have an ideaspace yet?<a href="">Create one now</a></p>
+                                            </div>               
                                             <!-- FOOTER -->
                                             <section class="footer-section color-grey mb-5">
                                                 <p class="issue">Issus?</p>
