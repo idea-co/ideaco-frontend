@@ -9,20 +9,20 @@
     ::-webkit-scrollbar {
         width: 10px;
     }
-    
+
     /* Track */
     ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+        background: #f1f1f1;
     }
-    
+
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: #888; 
+        background: #888;
     }
-    
+
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
+        background: #555;
     }
     .color-white {
         color: #fff;
@@ -83,7 +83,7 @@
         border: none;
         font-size: 18px;
         letter-spacing: 0.03em;
-        width: 180px;
+        width: 321px;
         height: 45px;
         border-radius: 10px;
         background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
@@ -124,7 +124,7 @@
             .title-description {
                 font-size: 20px;
             }
-        } 
+        }
         .our-vision-section{
             .title-description {
                 font-size: 20px;
@@ -132,7 +132,7 @@
             .title{
                 font-size: 27px;
             }
-        } 
+        }
         .team-section {
             .title{
                 font-size: 30px;
@@ -141,6 +141,9 @@
 
         .ideaco_footer {
             padding: 30px 30px 25px 30px;
+        }
+        .get-started {
+            width: 300px;
         }
     }
     .text-space {
