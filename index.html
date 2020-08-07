@@ -14,14 +14,17 @@
 <body id="home">
 
     <!--header section-->
-    <header class="ideaco_header">
+    <header class="ideaco_header ideaco_header--mobile ">
         <a href="index.html"><img src="assets/img/primary_logo.png"/></a>
-        <a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i></a>
-        <div class="ideaco_header__navbar ideaco_header__navbar--mobile">
+        <a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i><i class="fas fa-times"></i></a>
+
+        <div class="ideaco_header__navbar1">
             <a href="about.html">About</a>
             <a href="faq.html">FAQ</a>
             <a href="contact.html">Contact Us</a>
-            <a href="sign_in.html" class="login">Log In</a>
+        </div>
+        <div class="ideaco_header__navbar2">
+            <a href="sign-in.html" class="login">Log In</a>
             <button onclick="window.location.href='get-started.html'">Get Started</button>
         </div>
     </header>
@@ -30,10 +33,9 @@
     <div class="block">
         <div class="block__section1">
             <div class="block__section1__cont1">
-                <h1>Never Lose Your Next Big Deal.</h1>
+                <h1>Never Lose Your Next Big Ideal.</h1>
                 <p>IDEACO is robust and powerful idea management system with phases through share, support, prioritize
-                and implementation of the right ideas for businesses</p>
-                <p>Begin managing ideas</p>
+                and implementation of the right ideas for businesses.<br>Begin managing ideas.</p>
                 <button onclick="window.location.href='get-started.html'">Get Started</button>
             </div>
             <div class="block__section1__cont2">
@@ -94,8 +96,7 @@
                         <div class="img_cont__content">
                             <img src="assets/img/Group1.png"/>
                             <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris</p>
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
                             <h4>Julia Gabby</h4>
                             <p>Ux Architect</p>
                         </div>

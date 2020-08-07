@@ -2,15 +2,22 @@
     background: $bg-color;
     width: 100%;
     padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
     &--modifier{
         background: $content-color;
     }
     img{
         float: left;
     }
-    &__navbar{
+    &__navbar1{
+        width: 300px;
+    }
+    &__navbar2{
+        width: 250px;
+    }
+    &__navbar1,&__navbar2{
         float: right;
-        width: 650px;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -59,6 +66,9 @@
         color: $secondary-color !important;
         cursor: pointer;
         margin-top: -7px;
+        .fa-times{
+            display: none;
+        }
     }
 }
 .ideaco_footer{
@@ -116,33 +126,57 @@
 }
 
 @media (max-width:1000px){
-    .ideaco_header{
+    .ideaco_header--mobile{
         padding: 30px 20px;
-        &__navbar--mobile{
-            float: none;
-            display: grid;
-            width: 100%;
-            text-align: center;
-            justify-content: initial;
-            overflow: hidden;
-            height: 0px;
-            transition: 0.5s ease;
-            a{
-                width: 120px;
-                margin: auto;
-            }
-            button{
-                margin: 10px auto;
-            }
-            &--active{
-                height: 277px;
-            }
-            .login{
-                margin: auto;
-            }
+        display: block;
+        .ideaco_header__navbar1,.ideaco_header__navbar2{
+            display: none;
         }
-        &__menu{
+        .ideaco_header__menu{
             display: block;
+        }
+        &--active{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: #FAFAFA;
+            z-index: 1000;
+            img{
+                display: none;
+            }
+            .ideaco_header__menu{
+                .fa-bars{
+                    display: none;
+                }
+                .fa-times{
+                    display: block;
+                }
+            }
+            .ideaco_header__navbar1{
+                display: grid;
+                margin-top: 15%;
+                text-align: center;
+                width: auto;
+                float: none;
+                justify-content: normal;
+                a{
+                    margin: 20px auto;
+                }
+            }
+            .ideaco_header__navbar2{
+                display: grid;
+                width: auto;
+                text-align: center;
+                margin-top: 40px;
+                float: none;
+                justify-content: normal;
+                a{
+                    margin: 10px auto;
+                }
+                button{
+                    margin: 10px auto;
+                }
+            }
         }
     }
     .ideaco_footer{
