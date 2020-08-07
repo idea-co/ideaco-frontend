@@ -56,9 +56,12 @@
     .our-mission-section {
         padding-bottom: 5rem;
         padding-top: 5rem;
+        .title{
+            font-size: 40px;
+        }
     }
     .our-mission-section .title-description {
-        font-weight: 500;
+        font-size: 22px;
     }
 
 
@@ -66,6 +69,12 @@
     .our-vision-section {
         padding-bottom: 3rem;
         padding-top: 3rem;
+        .title{
+            font-size: 30px;
+        }
+        .title-description{
+            font-size: 22px;
+        }
     }
     .get-started {
         color: #fff;
@@ -77,46 +86,62 @@
         width: 180px;
         height: 45px;
         border-radius: 10px;
-        background: -webkit-gradient(linear, left top, left bottom, from(#6626EE), to(#4106BD));
         background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
-        -webkit-box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
-        box-shadow: 0px 5px 15px 3px rgba(102,38,238,0.2);
+        box-shadow: 0px 5px 15px 3px rgba(102, 38, 238, 0.2);
     }
     .get-started:hover {
         color: #fff;
         background: #6626EE;
         /* border: none; */
     }
-    .our-vision-section .title-description {
-        font-weight: 500;
-    }
-
 
     /* TEAM SECTION */
     .team-section {
         padding-bottom: 3rem;
         padding-top: 3rem;
+        .title{
+            font-size: 40px;
+            font-weight: bold;
+        }
     }
     .team-section .profile{
         padding-bottom: 2rem;
     }
     .team-section .profile .name{
         text-transform: uppercase;
-        padding-top: 1rem;;
+        padding-top: 1rem;
         padding-bottom: 0rem;
-        font-size: 18px;
+        font-size: 20px;
     }
     .team-section .profile .job-title{
-        font-size: 13px;
-        font-weight: 500;
+        font-size: 15px;
     }
     @media (max-width: 550px) {
-        .ideaco_header, .ideaco_footer {
+        .our-mission-section{
+            .title{
+                font-size: 30px;
+            }
+            .title-description {
+                font-size: 20px;
+            }
+        } 
+        .our-vision-section{
+            .title-description {
+                font-size: 20px;
+            }
+            .title{
+                font-size: 27px;
+            }
+        } 
+        .team-section {
+            .title{
+                font-size: 30px;
+            }
+        }
+
+        .ideaco_footer {
             padding: 30px 30px 25px 30px;
         }
-    }
-    .ideaco_header--modifier {
-        background: #F6F5F6;
     }
     .text-space {
         letter-spacing: .3px;

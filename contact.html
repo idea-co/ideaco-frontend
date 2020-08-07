@@ -13,21 +13,65 @@
 </head>
 <body id="contact">
 
-    <header>
-        <!-- Write header here -->
+    <!--header section-->
+    <header class="ideaco_header ideaco_header--modifier">
+        <a href="index.html"><img src="assets/img/primary_logo.png"/></a>
+        <a class="ideaco_header__menu" onclick="toggle_menu()"><i class="fas fa-bars"></i></a>
+        <div class="ideaco_header__navbar ideaco_header__navbar--mobile">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a class="active">Contact Us</a>
+            <a href="sign-in.html" class="login">Log In</a>
+            <button onclick="window.location.href='sign-up.html'">Get Started</button>
+        </div>
     </header>
  
-    <div>
-        <!--main section goes here-->
+    <div class="block">
+        <div class="block__section1">
+            <h2>Contact</h2>
+            <p>We'd like to hear from you as we strive to ensure optimum satisfaction for our users</p>
+        </div>
+        <div class="block__section2">
+            <form class="block__section2__cont">
+                <div class="email_cont"><label for="name">Your Email Address</label><input type="email" placeholder="Enter your email address"></div>
+                 <div class="textfield_cont">
+                    <label>Tell us what you need help with:</label>
+                    <textarea name="message" placeholder="Enter your message here"></textarea>
+                </div>
+                <button>Send Message</button>
+            </form>
+        </div>
     </div>
 
-  	<footer>
-        <!-- write footer here -->
+  	<!--footer section-->
+  	<footer class="ideaco_footer">
+        <div class="ideaco_footer__1">
+            <img src="assets/img/secondary_logo.png"/>
+            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <p>&#169; 2020 IDEACO Management System</p>
+        </div>
+        <div class="ideaco_footer__2">
+            <div class="ideaco_footer__2__links">
+                <h5>Links</h5>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="ideaco_footer__2__sociallinks">
+                <img src="assets/img/twitter.png"/>
+                <img src="assets/img/instagram.png"/>
+                <img src="assets/img/facebook.png"/>
+            </div>
+        </div>
+        <p class="ideaco_footer__copyright--mobile">&#169; 2020 IDEACO Management System</p>
 	</footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="assets/js/nav.js"></script>
 <script src=""></script>
 </body>
 </html>

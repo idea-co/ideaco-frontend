@@ -12,9 +12,10 @@
                 float: left;
                 width: 50%;
                 h1{
-                    color:$secondary-color;
+                    color: $primary-color;
                     font-size: 60px;
                     line-height: 59px;
+                    font-weight: bold;
                 }
                 p{
                     margin-top: 20px;
@@ -24,14 +25,19 @@
                 }
                 button{
                     width: 245px;
-                    height: 58px;
+                    height: 45px;
                     color: $bg-color;
-                    background-color: $secondary-color;
+                    border-radius: 10px;
+                    background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+                    box-shadow: 0px 5px 15px 3px rgba(102, 38, 238, 0.2);
                     font-size: 18px;
                     border: none;
                     outline: none;
-                    border-radius: 10px;
                     line-height: 40px;
+                    letter-spacing: 0.03em;
+                    &:hover{
+                        background: $secondary-color;
+                    }
                 }
             }
             &__cont2{
@@ -42,7 +48,7 @@
             }
         }
         &__section2{
-            background-color: $secondary-color;
+            background-color: #FAFAFA;
             padding: 30px 0px;
             &__cont1{
                 width: 800px;
@@ -51,25 +57,25 @@
                 align-items: center;
                 div{
                     h2{
-                        color: $bg-color;
+                        font-weight: bold;
                         width: 650px;
                     }
                     p{
                         font-weight: 500;
                         font-size: 20px;
-                        color: $content-color;
+                        color: $theme-color;
                         width: 690px;
                     }
                 }
             }
         }
         &__section3{
-            background: #FBFBFB;
+            background: $bg-color;
             text-align: center;
             padding: 70px 10px;
             h2{
                 font-size: 33px;
-                color: $secondary-color;
+                font-weight: bold;
             }
             p{
                 font-weight: 500;
@@ -97,6 +103,10 @@
                     }
                     div{
                         text-align: left;
+                        color: $secondary-color;
+                        h2{
+                            font-weight: bold;
+                        }
                     }
                 }
             }
@@ -106,7 +116,6 @@
             padding: 70px 10px;
             text-align: center;
             h2{
-                color: $secondary-color;
                 font-weight: bold;
                 font-size: 33px;
                 margin-bottom: 40px;
@@ -166,26 +175,38 @@
         }
         &__section5{
             padding: 70px 0px;
+            .container1{
+                display: none;
+            }
             div{
                 width: 800px;
                 margin: auto;
                 text-align: center;
                 h3{
-                    color: $secondary-color;
+                    font-weight: bold;
                 }
                 p{
                     font-size: 20px;
                 }
                 button{
-                    width: 245px;
-                    height: 58px;
+                    width: 180px;
+                    height: 45px;
                     color: $bg-color;
-                    background-color: $secondary-color;
+                    border-radius: 10px;
+                    background: linear-gradient(180deg, #6626EE 0%, #4106BD 100%);
+                    box-shadow: 0px 5px 15px 3px rgba(102, 38, 238, 0.2);
                     font-size: 18px;
                     border: none;
                     outline: none;
-                    border-radius: 10px;
                     line-height: 40px;
+                    letter-spacing: 0.03em;
+                    &:hover{
+                        background: $secondary-color;
+                    }
+                }
+                img{
+                    width:100%;
+                    margin:20px 0px
                 }
             }
         }
@@ -327,7 +348,7 @@
             &__section5{
                 padding: 50px 0px;
                 div{
-                    width: 90%;
+                    width: 95%;
                 }
             }
         }
@@ -423,7 +444,13 @@
             }
             &__section5{
                 div{
-                    width: 95%;
+                    width: 100%;
+                }
+                .container1{
+                    display: block;
+                }
+                .container2{
+                    display: none;
                 }
             }
         }
