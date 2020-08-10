@@ -102,7 +102,7 @@ function swipedetect(el, callback){
 }
   
 //USAGE:
-let el = document.querySelector('.block__section4__cont__slider');
+let el = document.querySelector('.block__section4__cont__slider .slider_cont');
 swipedetect(el, function(swipedir){
 	if (swipedir == 'left'){
 		plusSlides();
