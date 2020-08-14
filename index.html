@@ -24,7 +24,7 @@
             <a href="contact.html">Contact Us</a>
         </div>
         <div class="ideaco_header__navbar2">
-            <a href="sign-in.html" class="login">Log In</a>
+            <a href="join.html" class="login">Log In</a>
             <button onclick="window.location.href='get-started.html'">Get Started</button>
         </div>
     </header>
@@ -33,7 +33,7 @@
     <div class="block">
         <div class="block__section1">
             <div class="block__section1__cont1">
-                <h1>Never Lose Your Next Big Ideal.</h1>
+                <h1>Never Lose Your Next Big Idea.</h1>
                 <p>IDEACO is robust and powerful idea management system with phases through share, support, prioritize
                 and implementation of the right ideas for businesses.<br>Begin managing ideas.</p>
                 <button onclick="window.location.href='get-started.html'">Get Started</button>
@@ -44,7 +44,7 @@
         </div>
         <div class="block__section2">
             <div class="block__section2__cont1">
-                <img src="assets/img/Frame.png"/>
+                <img src="assets/img/Frame.svg"/>
                 <div>
                     <h2>We Believe Ideas Are Worth More When We Manage Well</h2>
                     <p>IDEACO helps to make the transition to implementation smother, ensuring that the next big idea never  
@@ -53,8 +53,8 @@
             </div>
         </div>
         <div class="block__section3">
-            <h2>Your workspace would never lose its Creativity</h2>
-            <p>IDEACO provides a system were good idea are promted and crowd sourced within its powerful flow</p>
+            <h2>A Central Idea Space For Any Work Force</h2>
+            <p>IDEACO provides an idea ecosystem where ideas are crowd sourced, shared, supported, promoted its powerful flow</p>
             <div class="block__section3__cont">
                 <div class="block__section3__cont__box">
                     <img src="assets/img/rectangle4.png"/>
@@ -90,19 +90,69 @@
             <div class="block__section4__cont">
                 <h2>Client Testimonials</h2>
                 <div class="block__section4__cont__slider">
-                    <div class="left_arrow"><i class="fas fa-arrow-left"></i></div>
-                    <div class="img_cont">
-                        <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
-                        <div class="img_cont__content">
-                            <img src="assets/img/Group1.png"/>
-                            <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <h4>Julia Gabby</h4>
-                            <p>Ux Architect</p>
+                    <div class="left_arrow"><i class="fas fa-arrow-left" onclick="minusSlides()"></i></div>
+                    <div class="slider_cont">
+                        <div class="img_cont slider1">
+                            <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
+                            <div class="img_cont__content">
+                                <img src="assets/img/Group1.png"/>
+                                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Jude </h4>
+                                <p>Backend developer</p>
+                            </div>
+                        </div>
+                        <div class="img_cont slider2">
+                            <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
+                            <div class="img_cont__content">
+                                <img src="assets/img/Group1.png"/>
+                                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Abdulazeez</h4>
+                                <p>Frontend developer</p>
+                            </div>
+                        </div>
+                        <div class="img_cont slider3">
+                            <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
+                            <div class="img_cont__content">
+                                <img src="assets/img/Group1.png"/>
+                                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Lejourn </h4>
+                                <p>UI/UX designer</p>
+                            </div>
+                        </div>
+                        <div class="img_cont slider4">
+                            <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
+                            <div class="img_cont__content">
+                                <img src="assets/img/Group1.png"/>
+                                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Atinu </h4>
+                                <p>Backend developer</p>
+                            </div>
+                        </div>
+                        <div class="img_cont slider5">
+                            <div class="img_cont__image"><img src="assets/img/rectangle63.png"/></div>
+                            <div class="img_cont__content">
+                                <img src="assets/img/Group1.png"/>
+                                <p class="testimony">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <h4>Samuel </h4>
+                                <p>Backend developer</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="right_arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="right_arrow"><i class="fas fa-arrow-right"  onclick="plusSlides()"></i></div>
                 </div>
+                <ul>
+                    <li class="slide_icon0"></li>
+                    <li class="slide_icon1"></li>
+                    <li class="slide_icon2"></li>
+                    <li class="slide_icon3"></li>
+                    <li class="slide_icon4"></li>
+                    <li class="slide_icon5"></li>
+                </ul>
             </div>
         </div>
         <div class="block__section5">
@@ -143,6 +193,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <script src="assets/js/nav.js"></script>
-<script src=""></script>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
