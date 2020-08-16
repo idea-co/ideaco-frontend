@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+    <title>IDEACO - Dashboard</title>
+</head>
+
+<body id="dashboard_layout">
+    <div class="dashboard">
+        <!--sidebar-->
+        <div class="sidebar">
+            <a class="close_menu" onclick="toggle_sidebar()"><i class="fas fa-arrow-left"></i></a>
+            <div class="sidebar__logo">
+                <a href="../index.html"><img src="../assets/img/secondary_logo.png" alt=""></a>
+            </div>
+            <div class="sidebar__section">
+                <div class="sidebar__section__link sidebar__section__link--active explore">
+                    <div class="sidebar__section__link__icon"><img src="../assets/img/Group9.png" /></div>Explore</div>
+                <div class="sidebar__section__link challenge">
+                    <div class="sidebar__section__link__icon"><img src="../assets/img/Group10.png" /></div>
+                    <div>Challenges</div>
+                </div>
+                <div class="sidebar__section__link overview">
+                    <div class="sidebar__section__link__icon"><img src="../assets/img/Group11.png" /></div>
+                    <div>Overview</div>
+                </div>
+                <div class="sidebar__section__link history">
+                    <div class="sidebar__section__link__icon"><img src="../assets/img/Group12.png" /></div>
+                    <div>History</div>
+                </div>
+            </div>
+            <button>Share</button>
+            <div class="sidebar__section__logout logout">
+                <div class="sidebar__section__logout__icon"><img src="../assets/img/Group13.png" /></div>
+                <div>Log Out</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <header class="content__header">
+                <div class="content__header__section1">
+                    <div class="content__header__section1__desc">
+                        <a href="../index.html"><img src="../assets/img/primary_logo.png" \></a>
+                        <h2>Welcome Jonathan</h2>
+                        <p>Your job, your idea</p>
+                    </div>
+                    <div class="content__header__section1__profile"><i class="far fa-user"></i></div>
+                </div>
+                <div class="content__header__section2">
+                    <h2>Explore</h2>
+                    <a class="content__header__section2__link content__header__section2__link--active">Most Active</a>
+                    <a class="content__header__section2__link">Highest Voted</a>
+                    <a class="content__header__section2__link">Most Recent</a>
+                    <a class="content__header__section2__link filter"><i class="fas fa-filter"></i><span> Filter </span><i class="fas fa-caret-down"></i></a>
+                    <a class="menu_icon" onclick="toggle_sidebar()"><i class="fas fa-bars"></i></a>
+                </div>
+            </header>
+            <div class="main_section">
+                <section>
+                    <div class="bodypad">
+                        <div class="container-fluid rightbox">
+                            <div class="card asidecard">
+                                <div class="card-header">
+                                    <h4>Insights</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row text-center">
+                                        <div class="col-sm">
+                                            <p class="statisticsnumbers">310</p>
+                                            <p class="title">Total <br> Challenges</p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="statisticsnumbers2">35</p>
+                                            <p class="title">Resolved <br> Challenges</p>
+                                        </div>
+                                        <div class="col-sm">
+                                            <p class="statisticsnumbers3">19</p>
+                                            <p class="title">Archived <br> Challenges</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid leftbox">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="/assets/img/Picturechallengescardhero.png" alt="" class="teamprofilepic img-fluid">
+                                    <h5>IDEACO</h5>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">3 days ago</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/onlineicon.png" alt="">General</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/importanticon.png" alt="">Important</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Diversifying Online Content</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque faucibus augue arcu at vulputate diam vel. Ac quam aliquet semper in consequat faucibus condimentum et sed cu at vulputate diam vel. Ac quam aliquet
+                                        semper in consequat faucibus condimentum et sed</p>
+                                </div>
+                                <div class="card-footer">
+                                    <hr>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item comments"><img src="/assets/img/Vectorcommenticon.png" alt="">30 Comments</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="/assets/img/Picturechallengescardhero.png" alt="" class="teamprofilepic img-fluid">
+                                    <h5>IDEACO</h5>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">3 days ago</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/onlineicon.png" alt="">General</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/importanticon.png" alt="">Important</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Diversifying Online Content</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque faucibus augue arcu at vulputate diam vel. Ac quam aliquet semper in consequat faucibus condimentum et sed cu at vulputate diam vel. Ac quam aliquet
+                                        semper in consequat faucibus condimentum et sed</p>
+                                </div>
+                                <div class="card-footer">
+                                    <hr>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item comments"><img src="/assets/img/Vectorcommenticon.png" alt="">30 Comments</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="/assets/img/Picturechallengescardhero.png" alt="" class="teamprofilepic img-fluid">
+                                    <h5>IDEACO</h5>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item">3 days ago</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/onlineicon.png" alt="">General</li>
+                                        <li class="list-inline-item"> <img src="/assets/img/importanticon.png" alt="">Important</li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h6>Diversifying Online Content</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque faucibus augue arcu at vulputate diam vel. Ac quam aliquet semper in consequat faucibus condimentum et sed cu at vulputate diam vel. Ac quam aliquet
+                                        semper in consequat faucibus condimentum et sed</p>
+                                </div>
+                                <div class="card-footer">
+                                    <hr>
+                                    <ul class="list-unstyled list-inline">
+                                        <li class="list-inline-item comments"><img src="/assets/img/Vectorcommenticon.png" alt="">30 Comments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="shareicon_mobile"><img src="../assets/img/plus.png" /></div>
+    <footer class="dashboard_footer">
+        <div class="explore active"><img src="../assets/img/Group9.png" /></div>
+        <div class="challenge"><img src="../assets/img/Group10.png" /></div>
+        <div class="overview"><img src="../assets/img/Group11.png" /></div>
+        <div class="history"><img src="../assets/img/Group12.png" /></div>
+        <footer>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <script src="../assets/js/sidebar.js"></script>
+</body>
+
+</html>
