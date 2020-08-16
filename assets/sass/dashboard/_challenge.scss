@@ -1,0 +1,150 @@
+.bodypad {
+    margin: 32px;
+    .leftbox {
+        float: left;
+        max-width: 60%;
+    }
+    .rightbox {
+        float: right;
+        max-width: 40%;
+        .asidecard {
+            .card-header {
+                h4 {
+                    font-family: Barlow;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #141414;
+                }
+            }
+            .card-body {
+                .row {
+                    .col-sm {
+                        .statisticsnumbers {
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 34px;
+                            line-height: 40px;
+                            color: #141414;
+                        }
+                        .statisticsnumbers2 {
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 34px;
+                            line-height: 40px;
+                            color: #06AC02;
+                        }
+                        .statisticsnumbers3 {
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 34px;
+                            line-height: 40px;
+                            color: #6626EE;
+                        }
+                        .title {
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            text-align: center;
+                            letter-spacing: 0.03em;
+                            color: #999999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .card {
+        border-radius: 10px;
+        margin-top: 32px;
+        box-shadow: 0px 2px 6px rgba(102, 38, 238, 0.1);
+        .card-header {
+            background-color: white;
+            border-bottom: none;
+            .teamprofilepic {
+                float: left;
+                padding-right: 20px;
+            }
+            h5 {
+                font-family: Barlow;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                color: #141414;
+            }
+            ul {
+                li {
+                    font-family: Barlow;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #000000;
+                    img {
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .card-body {
+            h6 {
+                font-family: Barlow;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+            }
+            p {
+                font-family: Barlow;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 20px;
+                color: #141414;
+                opacity: 0.9;
+            }
+        }
+        .card-footer {
+            background-color: white;
+            border-top: none;
+            ul {
+                li {
+                    font-family: Barlow;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #464646;
+                    img {
+                        padding-right: 5px;
+                    }
+                }
+                .comments {
+                    float: right;
+                    padding-top: 0.5%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .bodypad {
+        .leftbox {
+            float: none!important;
+            max-width: 100%!important;
+        }
+        .rightbox {
+            float: none!important;
+            max-width: 100%!important;
+        }
+    }
+}
