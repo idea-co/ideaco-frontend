@@ -8,10 +8,11 @@
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <link rel="stylesheet" href="../assets/css/style.min.css">
 <title>IDEACO - Dashboard</title>
 </head>
-<body id="dashboard_layout">
+<body id="overview_page">
     <div class="dashboard">
         <!--sidebar-->
         <div class="sidebar">
@@ -20,10 +21,10 @@
                 <a href="../index.html"><img src="../assets/img/secondary_logo.png" alt=""></a>
             </div>
             <div class="sidebar__section">
-                <div class="sidebar__section__link sidebar__section__link--active explore"><div class="sidebar__section__link__icon"><img src="../assets/img/Group9.png"/></div>Explore</div>
-                <div class="sidebar__section__link challenge"><div class="sidebar__section__link__icon"><img src="../assets/img/Group10.png"/></div><div>Challenges</div></div>
-                <div class="sidebar__section__link overview"><div class="sidebar__section__link__icon"><img src="../assets/img/Group11.png"/></div><div>Overview</div></div>
-                <div class="sidebar__section__link history"><div class="sidebar__section__link__icon"><img src="../assets/img/Group12.png"/></div><div>History</div></div>
+                <div class="sidebar__section__link explore"><div class="sidebar__section__link__icon"><img src="../assets/img/Group11.svg"/></div>Explore</div>
+                <div class="sidebar__section__link"><div class="sidebar__section__link__icon"><img src="../assets/img/Group10.svg"/></div><div>Challenges</div></div>
+                <div class="sidebar__section__link sidebar__section__link--active challenge overview"><div class="sidebar__section__link__icon"><img src="../assets/img/Group12.svg"/></div><div>Overview</div></div>
+                <div class="sidebar__section__link history"><div class="sidebar__section__link__icon"><img src="../assets/img/Group9.svg"/></div><div>History</div></div>
             </div>
             <button>Share</button>
             <div class="sidebar__section__logout logout"><div class="sidebar__section__logout__icon"><img src="../assets/img/Group13.png"/></div><div>Log Out</div></div>
@@ -45,20 +46,19 @@
                     <a class="content__header__section2__link">Highest Voted</a>
                     <a class="content__header__section2__link">Most Recent</a>
                     <a class="content__header__section2__link filter"><i class="fas fa-filter"></i><span> Filter </span><i class="fas fa-caret-down"></i></a>
-                    <a class="menu_icon" onclick="toggle_sidebar()"><i class="fas fa-bars"></i></a>
                 </div>
             </header>
-            <div class="main_section"> 
-                <!--code goes here -->
+             <!-- main content of tabs -->
+            <div class="main_section">
             </div>
         </div>
     </div>
     <div class="shareicon_mobile"><img src="../assets/img/plus.png"/></div>
     <footer class="dashboard_footer">
-        <div class="explore active"><img src="../assets/img/Group9.png"/></div>
-        <div class="challenge"><img src="../assets/img/Group10.png"/></div>
-        <div class="overview"><img src="../assets/img/Group11.png"/></div>
-        <div class="history"><img src="../assets/img/Group12.png"/></div>
+        <div class="explore active"><img src="../assets/img/Group11.svg"/></div>
+        <div class="challenge"><img src="../assets/img/Group10.svg"/></div>
+        <div class="overview"><img src="../assets/img/Group12.svg"/></div>
+        <div class="history"><img src="../assets/img/Group9.svg"/></div>
     <footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
